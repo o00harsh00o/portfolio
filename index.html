@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" onclick="contentLoader('home')" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" onclick="contentLoader('about')"  class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" onclick="contentLoader('portfolio')"  class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" onclick="contentLoader('contact')" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="w3-display-container" id="home">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="./assets/images/bg1.png" class="d-block w-100 carousel-img" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./assets/images/bg2.png" class="d-block w-100 carousel-img" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./assets/images/bg3.png" class="d-block w-100 carousel-img" alt="...">
+          </div>
+        </div>
+        <div class="w3-display-middle" style="white-space:nowrap;">
+           <span style="font-size: 30px;" class="w3-wide text-wrap" >Hey!</span><br/>
+           <span style="font-size: 30px;" class="w3-wide text-wrap" >I'm <span style="font-size: 50px;"><b>Harsh Yadav</b></span></span><br/>
+           <span style="font-size: 20px;" class="w3-wide text-wrap" ><i>(Full stack Developer)</i></span><br/>
+            
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center fade-in">ABOUT ME</h3>
+  
+  <p>I am a Full Stack Developer with 3+ years of experience, currently working at Tata Consultancy Services (TCS). 
+    I specialize in building scalable, robust solutions across the healthcare and retail domains. 
+    My expertise spans both front-end and back-end development, as well as microservices architecture and deployment.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      
+      <img src="./assets/images/animation6.gif" class="w3-round w3-image fade-in" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large fade-in">
+      <p>My technical toolbox includes a strong command of Java, SQL, JavaScript (ECMA6), Python, and Shell scripting,
+         along with hands-on experience in developing React Native apps for both Android and iOS platforms.
+        In my role, I am responsible for designing and developing web apps, mobile apps, microservices, REST APIs, and 
+        Spring Batch solutions that cater to client-specific needs. I take pride in understanding client requirements and 
+        translating them into highly functional, efficient, and scalable technical designs (HLD). 
+        I have also led initiatives to improve processes, reducing costs and manual labor by automating workflows through Spring Batch,
+         and delivering project improvements that add significant value to clients.
+        </p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16 fade-in">Key Skills:</p>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-sm-4 fade-in">
+            <div id="frontEndCard" onmouseenter="startGiphy('#frontEnd')" onmouseleave="pauseGiphy('#frontEnd')" class="card" style="width: 18rem;">
+                <img id="frontEndImg"  src="./assets/images/frontEndStill.png"  class="card-img-top" alt="...">
+                <div id="frontEndText" class="w3-display-middle w-100">
+                  <h3 style="text-align: center;"><b>FrontEnd</b></h3>
+                  <ol id="frontEndList">
+                    <li style="overflow: hidden;"><p>React Js</p></li>
+                    <li style="overflow: hidden;"><p>JavaScript(ECMA6)</p></li>
+                    <li style="overflow: hidden;"><p>jQuery</p></li>
+                    <li style="overflow: hidden;"><p>Bootstrap</p></li>
+                    
+
+                  </ol>
+                </div>
+              </div>
+
+        </div>
+        <div class="col-12 col-sm-4 fade-in">
+            <div id="backEndCard" onmouseenter="startGiphy('#backEnd')" onmouseleave="pauseGiphy('#backEnd')" class="card" style="width: 18rem;">
+                <img id="backEndImg"  src="./assets/images/backEndStill.png"  class="card-img-top" alt="...">
+                <div id="backEndText" class="w3-display-middle w-100">
+                  <h3 style="text-align: center;"><b>BackEnd</b></h3>
+                  <ol id="backEndList">
+                    <li style="overflow: hidden;"><p>Spring Boot</p></li>
+                    <li style="overflow: hidden;"><p>Spring Batches</p></li>
+                    <li style="overflow: hidden;"><p>Microservices</p></li>
+                    <li style="overflow: hidden;"><p>SQL</p></li>
+                    <li style="overflow: hidden;"><p>Redis</p></li>
+                    <li style="overflow: hidden;"><p>Azure EventHub</p></li>
+
+                  </ol>
+                </div>
+              </div>
+
+        </div>
+        <div class="col-12 col-sm-4 fade-in">
+            <div id="cloudCard" onmouseenter="startGiphy('#cloud')" onmouseleave="pauseGiphy('#cloud')" class="card" style="width: 18rem;">
+                <img id="cloudImg"  src="./assets/images/cloudStill.png"  class="card-img-top" alt="...">
+                <div id="cloudText" class="w3-display-middle w-100">
+                  <h3 style="text-align: center;"><b>Cloud & Automation</b></h3>
+                  <ol id="cloudList">
+                    <li style="overflow: hidden;"><p>Microsoft Azure</p></li>
+                    <li style="overflow: hidden;"><p>CI/CD Pipeline Automation</p></li>
+                    <li style="overflow: hidden;"><p>Docker & Kubernetes</p></li>
+                    <li style="overflow: hidden;"><p>Azure COSMOS DB</p></li>
+                    <li style="overflow: hidden;"><p>Azure CLI & Shell Script</p></li>
+                    <li style="overflow: hidden;"><p>Git Bash</p></li>
+
+
+
+                  </ol>
+                </div>
+              </div>
+
+        </div>
+    </div>
+    
+  </div>
+ 
+</div>
+
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div id="portfolioBg" class="bgimg-2 w3-display-container w3-opacity-min fade-in">
+    <img id="portfolioImg" src="./assets/images/portfolio.png" class="d-block w-100" alt="portfolio">
+  <div class="w3-display-middle">
+    <span style="text-shadow: 5px 5px 3px black;" class="w3-xxlarge w3-text-white w3-wide fade-in">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64 fade-in" id="portfolio">
+  <h3 class="w3-center">Work Experience</h3>
+  <div  style="border: none; box-shadow: none;" class="card mb-3" class="w-100">
+    <div id="workExpCard" class="row g-0">
+      <div style="background-color: rgb(26, 26, 26);" class="col-md-4">
+        <img style="padding: 3vh;"src="./assets/images/TCSlogo.png" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div style="box-shadow: 2px 2px 5px 2px black;" class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Tata Consultancy Services (TCS) | 3+ Years</h5>
+          <ul>
+            <li><b>TCS Ignite Program (Graduate Trainee) </b><p class="card-text"><small>(July 2021 - October 2021)</small></p></li>
+             <ul>
+              <li class="text-wrap">Underwent an intensive 3-month training program, mastering various technologies including React.js, Python Flask, AR/VR, AI/ML, and DevOps.</li>
+              <li class="text-wrap">Developed "Pluto", a documentation portal facilitating onboarding for new joiners. Key features included:</li>
+              <ul>
+                <li class="text-wrap">Resume builder, document conversion (PDF to DOC, etc.), self-attestation, digital signatures, PDF merging, and secure storage.</li>
+                <li class="text-wrap">CRUD operations for documents, ensuring structured and secure storage for users.
+                </li>
+              </ul>
+            </ul>
+          </ul>
+          <ul>
+            <li><b>WBA Project (Client: Walgreens Boots Alliance)</b><p class="card-text"><small>(October 2021 - Present)</small></p></li>
+            <ul>
+              <li class="text-wrap"> <b>Role: </b> Full Stack Developer | Domain: Healthcare | Framework: Agile</li>
+              <li class="text-wrap">Delivered scalable and innovative solutions for client requirements, adhering to healthcare and data security standards.</li>
+              <li><p><b>Major Contributions:</b></p></li>
+              <ol>
+                
+                <li class="text-wrap"><b>OIM Migration:</b></li>
+                <ul>
+                  <li class="text-wrap">Developed a REST API-based microservice using Spring Boot for comprehensive user management.</li>
+                  <li class="text-wrap">Enabled lifecycle operations (create, edit, entitlement management, delete) for users across multiple GUI applications.</li>
+                </ul>
+                <li class="text-wrap"><b>GUI Enhancements:</b><p class="card-text"><small>On React Js and Spring Boot</small></p></li>
+                <ul>
+                  <li class="text-wrap">Added functionality for Prescriber Maintenance by introducting a new section in the Client Portal Application.</li>
+                  <li class="text-wrap">Integrated drug and manufacturer association functionality in the COR Client Application.</li>
+                  <li class="text-wrap">Enhanced performance of reporting tools in COR Formulary Application via optimization techniques like indexing , query optimization, introducing Redis Cache etc.</li>
+                </ul>
+                <li class="text-wrap"><b>Critical Requirements:</b></li>
+                <ul>
+                  <li class="text-wrap"><b>JHI (Johns Hopkins Immunization):</b></li>
+                  <ul>
+                    <li class="text-wrap">Created an automated Spring Batch to handle end-to-end secure file encryption and transfer for immunization records.</li>
+                    <li class="text-wrap">Integrated logging, retry mechanisms, and automated email notifications for seamless operations across stakeholders.</li>
+                  </ul>
+                  <li class="text-wrap"><b>ETL to Microservices Conversion:</b></li>
+                  <ul>
+                    <li class="text-wrap">Migrated critical ETL jobs (billing cycle processing millions of claims) from Talend to Java microservices using Azure Event Hubs, Cosmos DB, and Redis Cache.</li>
+                    <li class="text-wrap">Improved performance, reduced costs, and enhanced scalability.</li>
+                  </ul>
+                </ul>
+                <li><b>Participation in monthly releases:</b></li>
+                <ul>
+                  <li class="text-wrap">Analyzed Functional Requirement Documents (FRDs) and designed High-Level Designs (HLDs).</li>
+                  <li class="text-wrap">Developed using React.js, Spring Boot, and SQL with best practices in code quality and reusability.</li>
+                  <li class="text-wrap">Conducted Unit Testing (JUnit), ensured full test coverage, and prepared documentation (UTCs and UTRs).</li>
+                  <li class="text-wrap">Deployed changes using CI/CD pipelines leveraging Docker, Kubernetes, Azure Repos, and Azure Pipelines.</li>
+                </ul>
+                <li><b>Additional Responsibilities:</b></li>
+                <ul>
+                  <li><b>Process Improvement Activities:</b></li>
+                  <ul>
+                    <li class="text-wrap">Automated manual processes through scripts, spring batches, and microservices to improve efficiency and reduce costs.</li>
+                  </ul>
+                  <li><b>Code Quality Assurance Team:</b></li>
+                  <ul>
+                    <li class="text-wrap">Ensured adherence to quality standards, reviewed code, and approved pull requests for production deployment.</li>
+                  </ul>
+                </ul>
+              </ol>
+            </ul>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div style="position: absolute; height: 10vh; right: 0px;" class="col-12 col-md-8">
+      <button id="readMoreBtn" value="readMore"  type="button"><i class='fa fa-angle-double-down' style="padding-right: 1vh;"></i><b> Read More </b> <i class='fa fa-angle-double-down' style="padding-left: 1vh;"></i> </button>
+    </div>
+  </div>
+
+  
+  
+
+  
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE I WORK</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script src="./script.js"></script> 
+ <!-- Option 1: Bootstrap Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
